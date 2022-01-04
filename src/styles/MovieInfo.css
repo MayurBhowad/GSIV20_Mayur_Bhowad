@@ -1,0 +1,49 @@
+.movie-info {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.movie-info-img img {
+  border: 1px solid #4a4a4a;
+}
+
+.movie-info-details {
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.title h1 {
+  color: #4a4a4a;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title h1 span {
+  color: #9b9b9b;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+  .movie-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .movie-info-details {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .movie-info-details .description1 {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=MovieInfo.css.map */

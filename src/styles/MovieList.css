@@ -8,6 +8,22 @@
   grid-gap: 20px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .movie-list {
+    margin-top: 2rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .movie-list {
+    margin-top: 2rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .movie-list {
     margin-top: 2rem;

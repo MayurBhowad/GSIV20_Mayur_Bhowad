@@ -13,7 +13,7 @@ const MovieCard = () => {
                     <h1>Movie Title</h1>
                     <p>(Rating)</p>
                 </div>
-                <p>Thisdhjd ahd a dad adsbua duasdnosd asdnasuhd asdnsad  uasdbda a is description on movie card.</p>
+                <p className='description'>Thisdhjd ahd a dad adsbua duasdnosd asdnasuhd asdnsad  uasdbda a is description on movie card.</p>
             </div>
         </div>
     )

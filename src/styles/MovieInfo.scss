@@ -1,0 +1,48 @@
+@import './variables';
+
+.movie-info {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-info-img {
+  img {
+    border: 1px solid $GREY;
+  }
+}
+
+.movie-info-details {
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.title {
+  h1 {
+    color: $GREY;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+    span {
+      color: $LIGHT_GRAY;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .movie-info {
+    flex-direction: column;
+  }
+
+  .movie-info-details {
+    margin: 0;
+    margin-top: 1rem;
+
+    .description1 {
+      margin-top: 1rem;
+    }
+  }
+}
