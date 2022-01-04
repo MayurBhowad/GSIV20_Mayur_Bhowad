@@ -3,6 +3,15 @@
   border: 1px solid #dfdfdf;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.movie-card:hover {
+  margin-top: -2px;
+  box-shadow: -4px 12px 16px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -4px 12px 16px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -4px 12px 16px 1px rgba(0, 0, 0, 0.4);
 }
 
 .movie-img img {
