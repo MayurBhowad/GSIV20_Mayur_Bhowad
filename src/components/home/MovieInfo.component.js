@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import infoImg from '../../assets/MovieImageInfo.png'
 import { getMovieById } from '../../redux/actions/movie.actions'
 import '../../styles/MovieInfo.css'
 

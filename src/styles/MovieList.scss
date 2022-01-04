@@ -1,12 +1,35 @@
 @import './variables';
 
 .movie-list {
-  margin: 4rem 0;
+  margin: 4rem 0 1rem 0;
   padding: 0 2rem;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+}
+
+.pagination {
+  margin: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  button {
+    width: 100px;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: $BLUE;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+  }
+
+  p {
+    padding: 0 1rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
