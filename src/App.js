@@ -27,7 +27,7 @@ function App() {
       <Navbar searchString={searchString} setSearchString={setSearchString} />
       <Routes>
         <Route path="/" element={<MovieList />} />
-        <Route path="/movie" element={<MovieInfo />} />
+        <Route path="/movie/:id" element={<MovieInfo />} />
       </Routes>
     </BrowserRouter>
   );
