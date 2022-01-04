@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import HomeIcon from '../../assets/Home_Icons.png';
 import '../../styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ setSearchString }) => {
     const location = useLocation();
     const navigate = useNavigate()
 
@@ -18,7 +18,7 @@ const Navbar = () => {
                     <h2>Movie Details</h2>
                 </div>
                 : <div className="search">
-                    <input type="text" name='search' placeholder='Search' />
+                    <input type="text" name='search' placeholder='Search' onChange={e => setSearchString(e.target.value)} />
                 </div>
             }
             <div className="home">

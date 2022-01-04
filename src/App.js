@@ -18,7 +18,7 @@ function App() {
   const [searchString, setSearchString] = useState('');
 
   useEffect(() => {
-    dispatch(AllMovies())
+    dispatch(AllMovies(searchString))
   }, [searchString])
 
   return (
