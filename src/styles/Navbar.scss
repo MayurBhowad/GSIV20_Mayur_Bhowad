@@ -31,6 +31,12 @@
   }
 }
 
+.home {
+  img {
+    cursor: pointer;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .navbar {
     padding: 1rem;
