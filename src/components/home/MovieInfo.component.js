@@ -25,7 +25,7 @@ const MovieInfo = () => {
                     <h1>{movie.title} <span>({movie.vote_average})</span></h1>
                 </div>
                 <div className="sub-info">
-                    <p>Year | Length | Director</p>
+                    <p>Year | Length: {movie.runtime} minutes | Director</p>
                 </div>
                 <div className="cast">
                     Cast: Actor 1, Actor 2, ...
