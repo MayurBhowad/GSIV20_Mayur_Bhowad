@@ -14,7 +14,7 @@
   }
 }
 
-.movie-info {
+.movie-card-info {
   padding: 0 0.5rem;
   .header {
     display: flex;
@@ -39,6 +39,7 @@
     overflow: hidden;
     display: -webkit-box;
     color: $GREY;
+    font-size: 15px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     -webkit-line-clamp: 2;

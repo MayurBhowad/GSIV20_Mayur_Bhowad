@@ -9,11 +9,11 @@
   width: 100%;
 }
 
-.movie-info {
+.movie-card-info {
   padding: 0 0.5rem;
 }
 
-.movie-info .header {
+.movie-card-info .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,25 +25,26 @@
           justify-content: space-between;
 }
 
-.movie-info .header h1 {
+.movie-card-info .header h1 {
   color: #4a4a4a;
   font-size: 20px;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
 }
 
-.movie-info .header p {
+.movie-card-info .header p {
   margin-top: 0;
   color: #9b9b9b;
   font-family: 'Roboto', sans-serif;
 }
 
-.movie-info .description {
+.movie-card-info .description {
   margin-top: 1rem;
   text-align: left;
   overflow: hidden;
   display: -webkit-box;
   color: #4a4a4a;
+  font-size: 15px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   -webkit-line-clamp: 2;

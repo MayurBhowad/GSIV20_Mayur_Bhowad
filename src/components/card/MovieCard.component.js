@@ -8,7 +8,7 @@ const MovieCard = () => {
             <div className="movie-img">
                 <img src={movieImgTemplate} alt="" />
             </div>
-            <div className="movie-info">
+            <div className="movie-card-info">
                 <div className="header">
                     <h1>Movie Title</h1>
                     <p>(Rating)</p>
