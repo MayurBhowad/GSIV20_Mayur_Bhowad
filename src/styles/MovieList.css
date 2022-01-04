@@ -1,0 +1,18 @@
+.movie-list {
+  margin: 4rem 0;
+  padding: 0 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .movie-list {
+    margin-top: 2rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=MovieList.css.map */
