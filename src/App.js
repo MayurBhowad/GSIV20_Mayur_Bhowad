@@ -9,16 +9,20 @@ import Navbar from './components/layout/Navbar.component';
 import MovieList from './components/home/MovieList.component';
 import MovieInfo from './components/home/MovieInfo.component';
 import { useEffect, useState } from 'react';
+import { AllMovies } from './redux/actions/movie.actions';
+import { useDispatch } from 'react-redux';
 
 function App() {
+  const dispatch = useDispatch();
 
   const [searchString, setSearchString] = useState('');
 
   useEffect(() => {
-    console.log('app loaded');
+    dispatch(AllMovies())
   }, [searchString])
 
   return (
+
     <BrowserRouter>
       <Navbar searchString={searchString} setSearchString={setSearchString} />
       <Routes>
