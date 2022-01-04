@@ -8,11 +8,19 @@ import {
 import Navbar from './components/layout/Navbar.component';
 import MovieList from './components/home/MovieList.component';
 import MovieInfo from './components/home/MovieInfo.component';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [searchString, setSearchString] = useState('');
+
+  useEffect(() => {
+    console.log('app loaded');
+  }, [searchString])
+
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar searchString={searchString} setSearchString={setSearchString} />
       <Routes>
         <Route path="/" element={<MovieList />} />
         <Route path="/movie" element={<MovieInfo />} />

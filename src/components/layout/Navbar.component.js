@@ -8,6 +8,9 @@ const Navbar = () => {
             <div className="search">
                 <input type="text" name='search' placeholder='Search' />
             </div>
+            {/* <div className="movie-info-page">
+                <h2>Movie Details</h2>
+            </div> */}
             <div className="home">
                 <img src={HomeIcon} alt="" srcset="" />
             </div>
